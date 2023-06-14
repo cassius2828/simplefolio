@@ -11345,10 +11345,38 @@ section {
   }
 }
 
-.navbar {
-  display: flex;
+.portfolio-img {
+  max-width: 100%;
+  height: auto;
 }
 
-.nav-item {
-  justify-content: center;
+.navbar a {
+  color: #3124db;
+  font-size: 2rem;
+  margin: 0.5rem 8rem 0.5rem 0.5rem;
+  font-family: PlayfairDisplay;
+}
+
+.navbar a:hover {
+  color: #b343fe;
+  transform: scale(1.1);
+}
+
+.navbar {
+  box-shadow: 0px 6px 8px 3px rgba(49, 36, 219, 0.16);
+  background-color: white;
+}
+
+.navbar-toggler {
+  background-color: #3124db;
+  opacity: 80%;
+  justify-content: end;
+  display: flex;
+  margin-left: auto;
+  margin-right: 2rem;
+}
+
+footer i:hover,
+.footer-name:hover {
+  color: #b343fe;
 }/*# sourceMappingURL=styles.css.map */
