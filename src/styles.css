@@ -11343,4 +11343,12 @@ section {
     box-shadow: none;
     margin-bottom: 3.2rem;
   }
+}
+
+.navbar {
+  display: flex;
+}
+
+.nav-item {
+  justify-content: center;
 }/*# sourceMappingURL=styles.css.map */
