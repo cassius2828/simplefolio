@@ -1,0 +1,56 @@
+@use "../custom" as *;
+@use "../components/mixins" as *;
+
+.portfolio-btns:hover {
+  @include gradient;
+}
+
+.border-top {
+  background-color: rgba($primary, 0.7);
+  width: 100%;
+  height: 0.5rem;
+}
+
+.portfolio-box {
+  position: relative;
+  width: 100%;
+  max-height: 18.5rem;
+  overflow: hidden;
+  margin-bottom: 1.3rem;
+  @include transitionProp;
+
+  img {
+    width: 100%;
+  }
+
+  .portfolio-info {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba($primary, 0.7);
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    @include transitionProp;
+
+    // chance that issues with screen readers may occur bc of the lack
+    // of display: hidden?? for captions works perfectly otherwise
+    .caption {
+      @include absoluteCenter;
+      color: $white;
+      text-transform: uppercase;
+      @include signatureFont;
+
+      h4 {
+        display: block;
+      }
+    }
+  }
+  .portfolio-info:hover {
+    opacity: 1;
+  }
+}
+
+.portfolio-box:hover {
+  transform: scale(1.1);
+}

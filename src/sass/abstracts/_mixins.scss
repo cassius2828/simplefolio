@@ -81,3 +81,7 @@ ORDER: Base + Typography > Generar Layout + Grid > Page Layout > Components
     @content;
   }
 }
+
+@mixin gradient {
+background: linear-gradient(to right, rgba($primary, .95), rgba($secondary, .95));
+}
