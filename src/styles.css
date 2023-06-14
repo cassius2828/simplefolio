@@ -10840,6 +10840,7 @@ ORDER: Base + Typography > Generar Layout + Grid > Page Layout > Components
 
 html {
   font-size: 62.5%;
+  scroll-behavior: smooth;
 }
 html.sr .load-hidden {
   visibility: hidden;
@@ -10890,12 +10891,12 @@ a:hover {
 }
 
 .text-color-main {
-  color: #7e0acc;
-  -webkit-text-fill-color: #7e0acc;
+  color: #b343fe;
+  -webkit-text-fill-color: #b343fe;
 }
 @supports ((-webkit-background-clip: text) or (background-clip: text)) {
   .text-color-main {
-    background-image: linear-gradient(135deg, #231c8a 0%, #7e0acc 100%);
+    background-image: linear-gradient(135deg, #3124db 0%, #b343fe 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     color: transparent;
@@ -10904,7 +10905,7 @@ a:hover {
 @media (max-width: 37.5em) {
   .text-color-main {
     background-image: none;
-    -webkit-text-fill-color: #7e0acc;
+    -webkit-text-fill-color: #b343fe;
   }
 }
 .text-color-main:hover {
@@ -10935,16 +10936,16 @@ a:hover {
 
 /* Hero Style */
 .cta-btn--hero {
-  color: #7e0acc;
-  -webkit-text-fill-color: #7e0acc;
+  color: #b343fe;
+  -webkit-text-fill-color: #b343fe;
   border: 2px solid transparent;
-  -o-border-image: linear-gradient(135deg, #231c8a 0%, #7e0acc 100%);
-     border-image: linear-gradient(135deg, #231c8a 0%, #7e0acc 100%);
+  -o-border-image: linear-gradient(135deg, #3124db 0%, #b343fe 100%);
+     border-image: linear-gradient(135deg, #3124db 0%, #b343fe 100%);
   border-image-slice: 1;
 }
 @supports ((-webkit-background-clip: text) or (background-clip: text)) {
   .cta-btn--hero {
-    background-image: linear-gradient(135deg, #231c8a 0%, #7e0acc 100%);
+    background-image: linear-gradient(135deg, #3124db 0%, #b343fe 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     color: transparent;
@@ -10952,7 +10953,7 @@ a:hover {
 }
 @media screen and (-ms-high-contrast: active), screen and (-ms-high-contrast: none) {
   .cta-btn--hero {
-    color: #7e0acc !important;
+    color: #b343fe !important;
   }
   .cta-btn--hero:hover {
     color: #fff !important;
@@ -10961,12 +10962,12 @@ a:hover {
 @media (max-width: 37.5em) {
   .cta-btn--hero {
     background-image: none;
-    border: 2px solid #7e0acc;
-    -webkit-text-fill-color: #7e0acc;
+    border: 2px solid #b343fe;
+    -webkit-text-fill-color: #b343fe;
   }
 }
 .cta-btn--hero::after {
-  background-image: linear-gradient(135deg, #231c8a 0%, #7e0acc 100%);
+  background-image: linear-gradient(135deg, #3124db 0%, #b343fe 100%);
 }
 @media (max-width: 37.5em) {
   .cta-btn--hero::after {
@@ -10979,7 +10980,7 @@ a:hover {
 }
 @media (max-width: 37.5em) {
   .cta-btn--hero:hover {
-    -webkit-text-fill-color: #7e0acc;
+    -webkit-text-fill-color: #b343fe;
   }
 }
 .cta-btn--hero:hover::after {
@@ -10995,7 +10996,7 @@ a:hover {
   background: #fff;
 }
 .cta-btn--resume:hover {
-  color: #7e0acc;
+  color: #b343fe;
   text-decoration: none;
 }
 .cta-btn--resume:hover::after {
@@ -11029,7 +11030,7 @@ a:hover {
   background-color: #333333;
 }
 .footer__text a:hover, .footer__text a:active {
-  color: #231c8a;
+  color: #3124db;
   box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
 }
 .footer hr {
@@ -11080,8 +11081,8 @@ section {
 }
 
 #about {
-  background-color: #231c8a;
-  background-image: linear-gradient(135deg, #231c8a 0%, #7e0acc 100%);
+  background-color: #3124db;
+  background-image: linear-gradient(135deg, #3124db 0%, #b343fe 100%);
   color: #fff;
   height: 100%;
   border-top: 0px;
@@ -11142,7 +11143,7 @@ section {
   }
 }
 #about .about-wrapper__info-text--important {
-  background: #7b0ac7;
+  background: #b13efe;
   display: inline-block;
   font-style: italic;
   padding: 0 0.3rem;
@@ -11160,7 +11161,7 @@ section {
 }
 
 #contact {
-  background-image: linear-gradient(135deg, #231c8a 0%, #7e0acc 100%);
+  background-image: linear-gradient(135deg, #3124db 0%, #b343fe 100%);
   -webkit-clip-path: polygon(0 15vh, 100% 0, 100% 100%, 0 100%);
   clip-path: polygon(0 15vh, 100% 0, 100% 100%, 0 100%);
   padding: 15rem 0 10rem 0;
@@ -11317,7 +11318,7 @@ section {
   }
 }
 #projects .project-wrapper__text p > a {
-  color: #7e0acc;
+  color: #b343fe;
 }
 #projects .project-wrapper__image {
   width: 90%;
