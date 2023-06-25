@@ -15,13 +15,23 @@
 .portfolio-box {
   position: relative;
   width: 100%;
-  max-height: 18.5rem;
+  height: auto;
+  // max-height: 18.5rem;
   overflow: hidden;
+  margin: 2rem;
   margin-bottom: 1.3rem;
   @include transitionProp;
+   @include media-breakpoint-down(sm) {
+  width: 70vw;
+  height: 70vw;
+  display: flex;
+  justify-content: center;
+  margin: 1rem auto;
+}
 
   img {
     width: 100%;
+    // object-fit: cover;
   }
 
   .portfolio-info {
@@ -32,7 +42,7 @@
     width: 100%;
     height: 100%;
     opacity: 0;
-    // @include transitionProp;
+    @include transitionProp;
 
     // chance that issues with screen readers may occur bc of the lack
     // of display: hidden?? for captions works perfectly otherwise
@@ -54,4 +64,11 @@
 
 .portfolio-box:hover {
   transform: scale(1.1);
+  z-index: 1;
+}
+
+.boxOne {
+  @include media-breakpoint-down(sm) {
+margin-top: 2.5rem;
+  }
 }
