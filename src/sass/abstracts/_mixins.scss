@@ -85,3 +85,7 @@ ORDER: Base + Typography > Generar Layout + Grid > Page Layout > Components
 @mixin gradient {
 background: linear-gradient(to right, rgba($primary, .95), rgba($secondary, .95));
 }
+
+@mixin transitionProp {
+    transition: 0.5s ease-in-out;
+}
